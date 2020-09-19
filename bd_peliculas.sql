@@ -7,3 +7,10 @@ CREATE TABLE peliculas(
     director VARCHAR(30),
     PRIMARY KEY(id)
 );
+
+CREATE TABLE reparto(
+    id INT,
+    actor VARCHAR(50),
+    FOREIGN KEY(id) REFERENCES peliculas(id)
+);
+
