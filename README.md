@@ -1,4 +1,4 @@
-### Instrucciones
+# Instrucciones
 1. Crear base de datos llamada películas (1 punto)
 2. Revisar los archivos peliculas.csv y reparto.csv para crear las tablas correspondientes,
 determinando la relación entre ambas tablas. (2 puntos)
