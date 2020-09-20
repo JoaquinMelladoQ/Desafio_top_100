@@ -14,9 +14,16 @@ CREATE TABLE reparto(
     FOREIGN KEY(id) REFERENCES peliculas(id)
 );
 
--- \COPY peliculas FROM '/Users/mac/Desktop/desafio_top_100/peliculas.csv' csv header
--- \COPY reparto FROM '/Users/mac/Desktop/desafio_top_100/reparto.csv' csv
+\COPY peliculas FROM '/Users/mac/Desktop/desafio_top_100/peliculas.csv' csv header
+\COPY reparto FROM '/Users/mac/Desktop/desafio_top_100/reparto.csv' csv
 
 -- Checking data from each table
 -- SELECT * FROM peliculas;
 -- SELECT * FROM reparto;
+
+SELECT pelicula,
+año_estreno,
+director,
+actor FROM peliculas AS peli
+INNER JOIN reparto AS rep ON 
+peli.id=rep.id WHERE peli.pelicula='Titanic';
