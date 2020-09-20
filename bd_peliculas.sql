@@ -48,3 +48,10 @@ SELECT pelicula FROM peliculas
 WHERE año_estreno >=1990 AND
 año_estreno <=1999
 ORDER BY pelicula ASC;
+
+SELECT actor FROM
+reparto AS repa
+INNER JOIN peliculas
+AS peli
+ON repa.id=peli.id
+WHERE año_estreno='2001';
