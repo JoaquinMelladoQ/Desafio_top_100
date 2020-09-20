@@ -45,8 +45,8 @@ SELECT COUNT(
 actor) FROM reparto;
 
 SELECT pelicula FROM peliculas
-WHERE año_estreno >=1990 AND
-año_estreno <=1999
+WHERE año_estreno 
+BETWEEN 1990 AND 1999
 ORDER BY pelicula ASC;
 
 SELECT actor FROM
