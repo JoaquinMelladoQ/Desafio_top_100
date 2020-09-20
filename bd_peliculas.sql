@@ -55,3 +55,10 @@ INNER JOIN peliculas
 AS peli
 ON repa.id=peli.id
 WHERE año_estreno='2001';
+
+SELECT actor FROM reparto
+WHERE id IN(
+SELECT id FROM peliculas
+ORDER BY año_estreno
+DESC LIMIT 1);
+
