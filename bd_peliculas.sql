@@ -27,3 +27,9 @@ director,
 actor FROM peliculas AS peli
 INNER JOIN reparto AS rep ON 
 peli.id=rep.id WHERE peli.pelicula='Titanic';
+
+SELECT pelicula 
+FROM peliculas AS pelis
+INNER JOIN reparto AS repa
+ON pelis.id=repa.id
+WHERE repa.actor='Harrison Ford';
