@@ -33,3 +33,10 @@ FROM peliculas AS pelis
 INNER JOIN reparto AS repa
 ON pelis.id=repa.id
 WHERE repa.actor='Harrison Ford';
+
+SELECT COUNT(
+pelicula) AS n_peli,
+director FROM peliculas
+GROUP BY director
+ORDER BY n_peli
+DESC LIMIT 10;
