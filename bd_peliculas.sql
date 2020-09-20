@@ -40,3 +40,6 @@ director FROM peliculas
 GROUP BY director
 ORDER BY n_peli
 DESC LIMIT 10;
+
+SELECT COUNT(
+actor) FROM reparto;
